@@ -3,8 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	message := "Hello!!"
-	fmt.Printf("%c", message[0])
-	message[0] = 'T' //ERROR!! СТРОКИ НЕИЗМЕНЯЕМЫ
+	message := "uv vagreangvbany fcnpr fgngvba"
+	messageLength := len(message)
+	for i := 0; i < messageLength; i++ {
+		c := message[i]
+		if c >= 'a' && c <= 'z' {
+			c += 13
+			if c > 'z' {
+				c = c - 26
+			}
+		}
+		fmt.Printf("%c", c)
+	}
 
 }
