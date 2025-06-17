@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	for i := 0; i < 255; i++ {
-		fmt.Printf("%d - %v \n", i, string(byte(i)))
-	}
+	// var pi rune = 960
+	// var alpha rune = 940
+	// var omega rune = 969
+	// var bang byte = 33
+	// fmt.Printf("%c %c %c %c\n", pi, alpha, omega, bang)
+	myRune := 34343
+	fmt.Printf("%c", myRune) //65 -> A
+
 }
